@@ -1,31 +1,20 @@
 import React from 'react';
-// import logo from './logo.svg';
-import logo from './new_logo.jpeg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Profile from "./components/profile/profile.component";
+import Home from "./components/home.component";
+import SignUp from './components/signUp.component';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Mad oh!</h1>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Welcome to HBCU Diversity Scholars</p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <Router>
+            <Route path="/" component={Home}/>
+            <Route path="/signUp" component={SignUp}/>
+            <Route path="/profile" component={Profile}/>
+        </Router>
+    );
 }
 
 export default App;
