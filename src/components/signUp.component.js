@@ -22,7 +22,7 @@ export default class SignUp extends Component{
                 <br></br>
                 <br></br>
 
-            <form action="/profile">
+            <form action="/next">
                 <div class="form-group">
                     <label for="newUserName">Full Name</label>
                     <input type="text" class="form-control" id="InputName"/>

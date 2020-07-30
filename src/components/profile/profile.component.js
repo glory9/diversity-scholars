@@ -26,7 +26,7 @@ export default class Profile extends Component{
                         <h5 class="card-title">Alisha Powell</h5>
                         <p class="card-text">Ardent coder passionate about empwering women in STEM.</p>
                         <p class="card-text"><small class="text-muted"><b>Sophomore</b> at <b>Morgan State University</b></small></p>
-                        <p class="card-text"><small class="text-muted"/><b>GPA</b>: 3.98</p>
+                        <p class="card-text"><small class="text-muted"/><b>GPA</b>: 3.98 <b>| Scholar Index: 98%</b></p>
                     </div>
                 </div>
 
